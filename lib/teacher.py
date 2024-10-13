@@ -7,4 +7,6 @@ import random
 class Teacher(User):
 
     def teach(self):
-        pass
+        for lesson in self.knowledge:
+            lesson_obj_num = random.randrange(0,len(self.knowledge))
+            return self.knowledge[lesson_obj_num]
